@@ -1,0 +1,11 @@
+[Unit]
+Description=Lightbar RPC Daemon
+After=network.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/local/bin/lightbar-rpcd
+
+[Install]
+WantedBy=multi-user.target
