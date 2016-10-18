@@ -1,0 +1,13 @@
+[Unit]
+Description=Lightbar Bouncer RPC Daemon
+After=network.target
+
+[Service]
+User=root
+Type=simple
+ExecStart=/usr/local/bin/lightbar-bounce-rpcd
+Restart=always
+RestartDelay=1s
+
+[Install]
+WantedBy=multi-user.target
