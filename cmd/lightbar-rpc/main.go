@@ -36,7 +36,7 @@ func main() {
 			args[0], args[1], args[2], args[3],
 		}, nil))
 	} else if len(args) == 12 {
-		must(client.Call("lightbar.SetColor", [4][3]byte{
+		must(client.Call("lightbar.SetLEDs", [4][3]byte{
 			[3]byte{args[0], args[1], args[2]},
 			[3]byte{args[3], args[4], args[5]},
 			[3]byte{args[6], args[7], args[8]},
